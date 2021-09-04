@@ -13,5 +13,7 @@ clean:
 install: output
 	mkdir -p $(DESTDIR)$(PREFIX)/bin
 	install -m 0755 dwmblocks $(DESTDIR)$(PREFIX)/bin/dwmblocks
+	install -t $(DESTDIR)$(PREFIX)/bin statusbar/*
 uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/dwmblocks
+	rm -f $(DESTDIR)$(PREFIX)/bin/sb-*
