@@ -11,5 +11,6 @@ fi
 if [ "$CONNAME" = "" ]; then
     printf "❎\n"
 else
+    (( ${#CONNAME} > 5 )) && CONNAME="${CONNAME:0:5}..."
     printf "📶%s\n" "$CONNAME"
 fi
