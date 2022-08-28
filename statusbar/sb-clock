@@ -1,5 +1,5 @@
 #!/bin/sh
 
-t="🕛"
-d="📅"
-date "+$t%a %b %d, %H:%M"
+t="Time "
+d="Date "
+date "+%a %b %d, %H:%M"
